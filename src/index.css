@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #b71f1f;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Yazı tipi */
+  background-color: #4fae29; /* Arka plan rengi */
+  line-height: 1.6; /* Satır yüksekliği */
+}
+
+a {
+  text-decoration: none; /* Linklerin altını çizmeyi kaldırır */
+  color: inherit; /* Linklerin renklerini metin rengiyle aynı yapar */
+}
+
+a:hover {
+  color: #ffea00; /* Link üzerine gelindiğinde renk değişir */
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Küçük ekranlarda font büyüklüğünü küçült */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Başlık boyutunu küçült */
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maksimum genişlik */
+  margin: 0 auto; /* Ortalamak için */
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  background-color: #17ad3f;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Yükleniyor ekranı */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
